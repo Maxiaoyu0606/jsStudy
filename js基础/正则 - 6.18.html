@@ -1,0 +1,42 @@
+<!-- JavaScript 正则表达式 -->
+<script>
+//          ----- 语法 -----
+//       语法： /正则表达式主体/修饰符（选）
+/*
+    例： 
+        var patt = /runoob/i
+        实例解析：
+            /runoob/i  是一个正则表达式。
+            runoob  是一个正则表达式主体 (用于检索)。
+            i  是一个修饰符 (搜索不区分大小写)。
+*/
+
+/*
+    使用字符串方法:
+        在 JavaScript 中，正则表达式通常用于两个字符串方法 : search() 和 replace()。
+
+        search() 方法 用于检索字符串中指定的子字符串，或检索与正则表达式相匹配的子字符串，并返回子串的起始位置。
+        例： 
+            var str = "Visit Runoob!"; 
+            var n = str.search(/Runoob/i);
+            输出结果为：6
+
+        replace() 方法 用于在字符串中用一些字符替换另一些字符，或替换一个与正则表达式匹配的子串。
+        使用正则表达式搜索 "Runoob" 字符串，且不区分大小写：
+        例: 
+            使用正则表达式且不区分大小写将字符串中的 Microsoft 替换为 Runoob :
+            var str = document.getElementById("demo").innerHTML; 
+            var txt = str.replace(/microsoft/i,"Runoob");
+            结果输出为: Visit Runoob!
+
+
+    正则表达式修饰符:
+        修饰符 可以在全局搜索中不区分大小写:
+
+        修饰符	描述
+        i	执行对大小写不敏感的匹配。
+        g	执行全局匹配（查找所有匹配而非在找到第一个匹配后停止）。
+        m	执行多行匹配。
+
+*/
+</script>

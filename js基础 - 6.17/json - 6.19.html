@@ -1,0 +1,37 @@
+<!-- javaScript JSON （ JavaScript Object Notation ）-->
+<script>
+    /*
+        JSON 是用于存储和传输数据的格式；
+        JSON 通常用于服务器向网页传递数据
+
+        JSON 语法规则
+            1. 数值为 键/值 对；
+            2. 数据由逗号分隔；
+            3. 大括号保存对象；
+            4. 方括号保存数值
+
+        格式： 
+        '{
+            "name": [
+                {"name1": "12312"},
+                {"name2": "12312"},
+                {"name3": "12312"},
+            ]
+        }'
+        
+    */
+
+    /* 
+        JSON 字符串转为 javaScript 对象 ---> JSON.parse()
+    */
+    let obj = '{ "team" : [{ "name": "小明", "age": "20" }, { "name": "小红", "age": "18" }]}'
+    console.log(JSON.parse (obj), "字符串转对象")
+
+
+
+    /* 
+        javaScript 对象 转 JSON 字符串  ---> JSON.stringify()
+    */
+
+    console.log(JSON.stringify (obj), "将 JavaScript 值转为字符串 ")
+</script>
